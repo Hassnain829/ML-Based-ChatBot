@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMYBrand Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>🤖 BMYBrand Assistant</h2>
+            <p>Ask me about our services, pricing, policies, and more!</p>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot">
+                <div class="avatar">B</div>
+                <div class="content">Hello! I'm your BMYBrand assistant. How can I help you today?</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+
+        function addMessage(sender, text) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            messageDiv.innerHTML = `
+                <div class="avatar">${sender === 'user' ? 'U' : 'B'}</div>
+                <div class="content">${text}</div>
+            `;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        async function sendMessage() {
+            const message = userInput.value.trim();
+            if (!message) return;
+
+            addMessage('user', message);
+            userInput.value = '';
+
+            // Show typing indicator
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message bot typing';
+            typingDiv.innerHTML = '<div class="avatar">B</div><div class="content"><span></span><span></span><span></span></div>';
+            chatMessages.appendChild(typingDiv);
+
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: message })
+                });
+                const data = await response.json();
+                
+                // Remove typing indicator
+                chatMessages.removeChild(typingDiv);
+
+                if (data.error) {
+                    addMessage('bot', 'Sorry, I encountered an error.');
+                } else {
+                    addMessage('bot', data.response);
+                }
+            } catch (error) {
+                chatMessages.removeChild(typingDiv);
+                addMessage('bot', 'Network error. Please try again.');
+            }
+        }
+
+        sendBtn.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        // Check health on load
+        fetch('/health').then(res => res.json()).then(data => {
+            if (!data.model_loaded) {
+                addMessage('bot', '⚠️ Model not loaded. Please check the server logs.');
+            }
+        });
+    </script>
+</body>
+</html>

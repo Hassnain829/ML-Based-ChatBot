@@ -1,0 +1,784 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Hi there", "Hello there", "Hey there", "Good morning", "Good afternoon", "Good evening",
+  "What's up", "How are you", "Howdy", "Hiya", "Greetings", "Nice to meet you", "Hello BMYBrand", "Hey BMYBrand",
+  "Hi team", "Hello team", "Hey support", "Hi everyone", "Hello everyone", "Hey there, I need help",
+  "Hi, I have a question", "Hello, can you help me?", "Hey, I'm interested in your services",
+  "Good day", "How's it going", "What's good", "Yo", "Hiya, I need some info",
+  "Hello, are you there?", "Hi, is this the support?", "Hey, I'm looking for logo design",
+  "Hi, I want to build a website", "Hello, I need pricing details", "Hey, can you assist me?",
+  "Hi there, I'm new here", "Hello, I'd like to know more", "Hey, what can you do for me?",
+  "Hi, I'm interested in branding", "Hello, I need a quote", "Hey, I have a project",
+  "Hi, can you tell me about your services?", "Hello, I'm exploring options", "Hey, I need some guidance",
+  "Hi, I want to discuss a website", "Hello, I'm looking for a logo", "Hey, I need help with e-commerce",
+  "Hi, do you have any offers?", "Hello, I'm ready to start", "Hey, I need a professional website",
+  "Hi, I want to know about refund policy", "Hello, I have a question about payment", "Hey, what's your process?"
+      ],
+      "responses": [
+        "Hello! Welcome to BMYBrand. How can I assist you with your design needs today?",
+        "Hi there! Looking for a logo, website, or something else?",
+        "Greetings! I'm the BMYBrand assistant. Feel free to ask about our services.",
+        "Hello! Ready to take your brand to the next level? Let me know how I can help!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "Goodbye", "See you later", "See ya", "Take care", "Have a nice day", "Talk to you later",
+  "Catch you later", "Bye bye", "Later", "Peace out", "I'm off", "Gotta go", "See you soon",
+  "Thanks, bye", "Thank you, goodbye", "Thanks for your help, bye", "Alright, bye", "Okay, bye",
+  "I'll be back", "See you next time", "Until next time", "Farewell", "Adios", "Ciao",
+  "Bye for now", "Take it easy", "Have a good one", "Goodnight", "Bye, have a great day",
+  "Thanks, talk to you later", "I'm done for now, bye", "That's all, thanks, bye", "Okay, thanks, goodbye",
+  "I'll contact you later, bye", "Thanks for the info, bye", "Bye, I'll check back later",
+  "Alright, I'm leaving, bye", "See you around", "Bye, take care", "Goodbye, have a wonderful day",
+  "Bye, I appreciate your help", "Thanks, see ya", "Okay, I'll be in touch, bye", "Bye, I'll email you",
+  "That's it for now, goodbye", "Bye, I'll visit again", "See you later, alligator", "In a while, crocodile",
+  "Bye, keep up the good work", "Thanks, goodbye for now", "I'm logging off, bye", "Bye, have a great evening"
+      ],
+      "responses": [
+        "Thank you for visiting BMYBrand. Have a great day!",
+        "Goodbye! Feel free to reach out anytime.",
+        "Thanks for chatting! We're here 24/7 if you need anything else.",
+        "Take care! Hope to see you again soon."
+      ]
+    },
+    {
+      "tag": "services_general",
+      "patterns": [
+        "What services do you offer?", "What can you do for my business?", "Tell me about your services",
+  "What do you do?", "Your services", "What all services you provide?", "Service list", "What can you help with?",
+  "What kind of services", "What do you specialize in", "Your expertise", "Services offered by BMYBrand",
+  "I want to know about your services", "Can you list your services?", "What are your core services?",
+  "Do you design logos?", "Do you build websites?", "Do you offer e-commerce solutions?", "Do you do branding?",
+  "Do you create videos?", "Do you provide SEO?", "Do you handle social media marketing?", "Do you write content?",
+  "What all can you design?", "What development services do you have?", "What marketing services do you offer?",
+  "Tell me about your design services", "Tell me about your development services", "Tell me about your marketing services",
+  "I need a logo, can you help?", "I need a website, do you do that?", "I need an e-commerce store, can you build it?",
+  "I need branding, what do you have?", "I need a promotional video, can you make it?", "I need SEO, do you offer that?",
+  "I need social media marketing, can you manage it?", "I need content writing, do you provide that?",
+  "What services are available for startups?", "What services do you recommend for a new business?",
+  "Do you have packages for small businesses?", "What's your specialty?", "What are you best known for?",
+  "Can you handle a complete brand identity project?", "Do you offer custom design services?",
+  "Do you provide ongoing support after the project?", "What industries do you serve?",
+  "Have you worked with businesses like mine?", "Can you show me some examples of your work?",
+  "How do your services compare to others?", "What makes your services unique?",
+  "Do you offer any free consultations?", "Can I get a quote for multiple services?",
+  "Do you bundle services for discounts?", "I'm interested in a combination of logo and website design",
+  "What services are most popular?", "Which service is best for increasing sales?"
+      ],
+      "responses": [
+        "BMYBrand offers a full range of digital services including professional logo design, custom web design and development, e-commerce solutions, branding packages, 2D explainer videos, SEO services, social media marketing, and web content writing. Which area are you interested in?",
+        "We specialize in logo design, website development, e-commerce solutions, branding, video animations, SEO, SMM, and content writing. Let me know what you need!",
+        "From logos to full-scale websites and marketing - we do it all! Check out our packages or tell me what you're looking for."
+      ]
+    },
+    {
+      "tag": "pricing_logo_basic",
+      "patterns": [
+        "basic logo price", "basic logo package cost", "how much is basic logo", "cheapest logo design",
+  "logo for $39", "basic logo details", "what's in basic logo package", "tell me about $39 logo",
+  "simple logo cost", "entry level logo package", "basic logo design", "$39 logo package", "basic package features",
+  "I need a basic logo, how much?", "what does basic logo include?", "basic logo package what's included",
+  "cost of basic logo design", "price for basic logo", "basic logo plan", "basic logo package overview",
+  "is there a $39 logo?", "do you have a logo for $39?", "I want the cheapest logo", "what's the most affordable logo?",
+  "how many concepts in basic logo?", "basic logo revisions", "basic logo turnaround time",
+  "basic logo file formats", "do I get source files with basic logo?", "basic logo ownership rights",
+  "can I get a logo for $39?", "is $39 logo good for startup?", "basic logo for small business",
+  "I want a simple logo design", "I need a logo on a budget", "what do I get for $39 logo?",
+  "basic logo package description", "basic logo pricing details", "tell me more about the $39 logo",
+  "how does basic logo work?", "basic logo design process", "how many designers for basic logo?",
+  "basic logo free icon", "basic logo 2 concepts", "basic logo 2 revisions",
+  "basic logo JPEG only", "basic logo 24-48 hours", "basic logo money back guarantee",
+  "basic logo satisfaction guarantee", "basic logo ownership rights", "basic logo dedicated account manager",
+  "is $39 logo worth it?", "compare basic logo with other packages"
+      ],
+      "responses": [
+        "Our Basic Logo Package is just $39 (was $78). It includes 2 original logo concepts, 1 dedicated designer, 2 revisions, free icon design, and JPEG formats. Delivery in 24-48 hours with 100% money-back guarantee.",
+        "The Basic Logo Package at $39 gives you 2 unique logo concepts, 2 revisions, and free icon. Perfect for startups! You get JPEG files and full ownership rights."
+      ]
+    },
+    {
+      "tag": "pricing_logo_startup",
+      "patterns": [
+        "startup logo package", "$69 logo package", "logo with 4 concepts", "startup logo price", "what's in startup logo",
+  "logo startup details", "4 logo concepts price", "$69 logo", "startup logo features", "startup logo cost",
+  "how much is startup logo", "tell me about $69 logo", "startup logo what's included", "startup logo package details",
+  "I need a startup logo", "startup logo design", "startup level logo", "logo for growing business",
+  "how many concepts in startup logo", "startup logo revisions", "startup logo designers",
+  "startup logo free icon", "startup logo file formats", "startup logo JPEG PNG", "startup logo 2 designers",
+  "startup logo 5 revisions", "startup logo 4 concepts", "startup logo 24-48 hour",
+  "startup logo money back guarantee", "startup logo ownership rights", "startup logo satisfaction guarantee",
+  "is $69 logo good for my business?", "startup logo vs basic logo", "differences between startup and basic logo",
+  "what extra does startup logo offer?", "startup logo for new company", "startup logo for brand launch",
+  "I want a logo with 4 concepts", "I need 5 revisions for my logo", "do you have a logo package with 4 concepts?",
+  "startup logo price $69", "startup logo original price $138", "startup logo discounted price",
+  "startup logo features list", "startup logo includes icon", "startup logo PNG format",
+  "startup logo more concepts than basic", "startup logo better than basic", "which logo package is best for startup?"
+      ],
+      "responses": [
+        "Our Startup Logo Package is $69 (was $138). You get 4 original logo concepts, 2 dedicated designers, 5 revisions, free icon, and both JPEG & PNG formats. 24-48 hour turnaround with 100% satisfaction guarantee.",
+        "The Startup Package at $69 includes 4 unique logo concepts, 5 revisions, and 2 designers working on your project. Great for growing businesses!"
+      ]
+    },
+    {
+      "tag": "pricing_logo_professional",
+      "patterns": [
+        "professional logo package", "$99 logo package", "logo with stationery", "professional logo price",
+  "what's in professional logo", "6 logo concepts", "logo with business card", "professional logo features",
+  "$99 logo details", "professional logo cost", "how much is professional logo", "tell me about $99 logo",
+  "professional logo what's included", "professional logo package details", "I need a professional logo",
+  "professional logo design", "logo for established business", "how many concepts in professional logo",
+  "professional logo revisions unlimited", "professional logo 3 designers", "professional logo stationery design",
+  "professional logo business card letterhead envelope", "professional logo file formats AI PSD EPS",
+  "professional logo all formats", "professional logo vector files", "professional logo source files",
+  "professional logo industry specific designers", "professional logo unlimited revisions",
+  "professional logo 6 concepts", "professional logo free icon", "professional logo 24-48 hour",
+  "professional logo money back guarantee", "professional logo ownership rights", "professional logo satisfaction guarantee",
+  "is $99 logo worth it?", "professional vs startup logo", "differences between professional and startup",
+  "what extra does professional logo offer?", "professional logo for serious branding",
+  "I want a logo with stationery design", "I need business cards with my logo", "do you have a logo package with full stationery?",
+  "professional logo price $99", "professional logo original price $198", "professional logo discounted",
+  "professional logo features list", "professional logo includes icon and stationery",
+  "professional logo AI EPS formats", "professional logo better for branding",
+  "which logo package gives me source files?", "I need vector files for my logo"
+      ],
+      "responses": [
+        "Our Professional Logo Package is $99 (was $198). It includes 6 original concepts, 3 industry-specific designers, unlimited revisions, full stationery design (business card, letterhead, envelope), and all file formats (JPEG, PSD, EPS, AI, PNG, TIFF, SVG).",
+        "The Professional Package at $99 gives you 6 logo concepts, unlimited revisions, and complete stationery design. You get all source files and 24-48 hour delivery!"
+      ]
+    },
+    {
+      "tag": "pricing_logo_elite",
+      "patterns": [
+        
+  "elite logo package", "$299 logo package", "unlimited logo concepts", "logo with business cards",
+  "elite logo price", "what's in elite logo", "150 business cards with logo", "elite package details",
+  "elite logo cost", "how much is elite logo", "tell me about $299 logo", "elite logo what's included",
+  "I need an elite logo", "elite logo design", "logo for comprehensive branding", "unlimited concepts logo",
+  "how many concepts in elite logo unlimited", "elite logo revisions unlimited", "elite logo 8 designers",
+  "elite logo stationery design", "elite logo 150 business cards", "elite logo email signature",
+  "elite logo all file formats", "elite logo source files", "elite logo industry specific designers",
+  "elite logo free business cards", "elite logo 24-48 hour", "elite logo money back guarantee",
+  "elite logo ownership rights", "elite logo satisfaction guarantee", "is $299 logo worth it?",
+  "elite vs professional logo", "differences between elite and professional", "what extra does elite logo offer?",
+  "elite logo for complete branding", "I want unlimited logo concepts", "I need 150 business cards free",
+  "do you have a logo package with business cards?", "elite logo price $299", "elite logo original price $598",
+  "elite logo discounted", "elite logo features list", "elite logo includes stationery and business cards",
+  "elite logo email signature design", "elite logo 8 designers dedicated", "elite logo best for full identity",
+  "which logo package includes business cards?", "I need a logo with all files and cards"
+
+      ],
+      "responses": [
+        "Our Elite Logo Package is $299 (was $598). You get unlimited original concepts, 8 dedicated designers, unlimited revisions, stationery design, 150 free business cards, email signature, and all file formats. Complete branding solution!",
+        "The Elite Package at $299 includes unlimited logo concepts, 8 designers, 150 business cards, and full stationery. Perfect for serious branding!"
+      ]
+    },
+    {
+      "tag": "pricing_logo_platinum",
+      "patterns": [
+        "platinum logo package", "$599 logo package", "logo with landing page", "platinum logo price",
+  "what's in platinum logo", "logo with social media designs", "brand book with logo", "250 business cards",
+  "complete branding package", "platinum logo cost", "how much is platinum logo", "tell me about $599 logo",
+  "platinum logo what's included", "I need a platinum logo", "platinum logo design", "logo for ultimate branding",
+  "unlimited concepts platinum", "platinum logo revisions unlimited", "platinum logo 8 designers",
+  "platinum logo stationery design", "platinum logo 250 business cards", "platinum logo brand book",
+  "platinum logo landing page", "platinum logo email signature", "platinum logo social media designs",
+  "platinum logo flyer or brochure", "platinum logo all file formats", "platinum logo source files",
+  "platinum logo 24-48 hour", "platinum logo money back guarantee", "platinum logo ownership rights",
+  "platinum logo satisfaction guarantee", "is $599 logo worth it?", "platinum vs elite logo",
+  "differences between platinum and elite", "what extra does platinum logo offer?",
+  "platinum logo for complete brand identity", "I want a logo with brand book", "I need a landing page with my logo",
+  "do you have a logo package with social media designs?", "platinum logo price $599",
+  "platinum logo original price $1198", "platinum logo discounted", "platinum logo features list",
+  "platinum logo includes stationery, cards, book, page", "platinum logo Facebook Twitter Instagram designs",
+  "platinum logo 2-sided flyer", "platinum logo best for full-scale branding",
+  "which logo package includes brand book?", "I need a complete branding solution"
+      ],
+      "responses": [
+        "Our Platinum Logo Package is $599 (was $1198). It includes unlimited concepts, 8 designers, stationery, brand book, 250 business cards, landing page, email signature, social media designs (Facebook, Twitter, Instagram), and a 2-sided flyer or brochure. Ultimate branding!",
+        "The Platinum Package at $599 gives you everything: unlimited logo concepts, brand book, landing page, social media designs, and 250 business cards. It's our most comprehensive branding solution!"
+      ]
+    },
+    {
+      "tag": "pricing_website_basic",
+      "patterns": [
+        "basic website price", "3 page website cost", "cheapest website package", "basic website details",
+  "what's in basic website", "$349 website", "simple website cost", "basic package features", "website for $349",
+  "3 page website what included", "basic website package", "how much is basic website", "tell me about $349 website",
+  "basic website what's included", "I need a basic website", "basic website design", "website for small business",
+  "how many pages in basic website", "basic website custom layout", "basic website stock photos",
+  "basic website favicon", "basic website source files", "basic website W3C certified",
+  "basic website 48 hour concepts", "basic website unlimited revisions", "basic website ownership rights",
+  "basic website money back guarantee", "basic website satisfaction guarantee", "is $349 website good?",
+  "basic website vs startup", "what extra does basic website have?", "basic website mobile responsive addon",
+  "basic website CMS addon", "basic website additional $99 for mobile", "basic website additional $149 for CMS",
+  "basic website no hidden fees", "basic website dedicated project manager", "basic website complete deployment",
+  "I want a simple 3 page website", "I need a basic online presence", "do you have a website for $349?",
+  "basic website price $349", "basic website original price $698", "basic website discounted",
+  "basic website features list", "basic website includes 2 stock photos", "basic website cross browser compatible",
+  "basic website complete source files", "basic website perfect for startup"
+      ],
+      "responses": [
+        "Our Basic Website package is $349 (was $698). It includes a 3-page custom-designed website with custom layout, 2 stock photos, favicon, and complete source files. Mobile responsive (+$99) and CMS (+$149) are available as add-ons. No hidden fees!",
+        "The Basic Website at $349 gives you 3 custom pages, W3C certified HTML, and complete ownership. Initial concepts in 48 hours with unlimited revisions!"
+      ]
+    },
+    {
+      "tag": "pricing_website_startup",
+      "patterns": [
+        "startup website price", "5 page website cost", "startup website package", "$449 website",
+  "what's in startup website", "website with contact form", "5 page website details", "startup package features",
+  "how much is startup website", "tell me about $449 website", "startup website what's included",
+  "I need a startup website", "startup website design", "website for growing business", "5 page website what included",
+  "startup website custom layout", "startup website contact form", "startup website 3 banner designs",
+  "startup website 5 stock photos", "startup website favicon", "startup website sitemap",
+  "startup website unlimited revisions", "startup website source files", "startup website W3C certified",
+  "startup website 48 hour concepts", "startup website ownership rights", "startup website money back guarantee",
+  "startup website satisfaction guarantee", "is $449 website worth it?", "startup vs basic website",
+  "what extra does startup website have?", "startup website mobile responsive addon",
+  "startup website CMS addon", "startup website additional $199 for mobile", "startup website additional $249 for CMS",
+  "startup website no hidden fees", "startup website dedicated project manager", "startup website complete deployment",
+  "I want a 5 page website with contact form", "I need a website with banners", "do you have a website for $449?",
+  "startup website price $449", "startup website original price $898", "startup website discounted",
+  "startup website features list", "startup website includes 3 banners and 5 photos", "startup website Google friendly sitemap"
+      ],
+      "responses": [
+        "Our Startup Website package is $449 (was $898). It includes a 5-page custom website, contact/query form, 3 banner designs, 5 stock photos, favicon, Google-friendly sitemap, and unlimited revisions. Mobile responsive (+$199) and CMS (+$249) available.",
+        "The Startup Website at $449 gives you 5 pages, 3 banners, unlimited revisions, and complete source files. Perfect for small businesses!"
+      ]
+    },
+    {
+      "tag": "pricing_website_professional",
+      "patterns": [
+        "professional website price", "10 page website cost", "professional website package", "$899 website",
+  "what's in professional website", "website with CMS", "10 page website details", "professional package features",
+  "how much is professional website", "tell me about $899 website", "professional website what's included",
+  "I need a professional website", "professional website design", "website for established business",
+  "10 page website what included", "professional website CMS admin panel", "professional website social media integration",
+  "professional website 5+ stock photos", "professional website banner designs", "professional website favicon",
+  "professional website sitemap", "professional website unlimited revisions", "professional website source files",
+  "professional website W3C certified", "professional website 48 hour concepts", "professional website ownership rights",
+  "professional website money back guarantee", "professional website satisfaction guarantee",
+  "professional website mobile responsive included", "professional website CMS included", "is $899 website worth it?",
+  "professional vs startup website", "what extra does professional website have?", "professional website industry specific team",
+  "professional website custom interactive design", "professional website dynamic web design",
+  "professional website dedicated project manager", "professional website complete deployment",
+  "I want a 10 page website with CMS", "I need a website with admin panel", "do you have a website for $899?",
+  "professional website price $899", "professional website original price $1798", "professional website discounted",
+  "professional website features list", "professional website includes mobile responsive and CMS",
+  "professional website expert designers and developers", "professional website complete source files"
+      ],
+      "responses": [
+        "Our Professional Website package is $899 (was $1798). It includes up to 10 unique pages, CMS/admin panel, 5+ stock photos and banners, social media integration, unlimited revisions, mobile responsive, and CMS included! Industry-specific team works on your project.",
+        "The Professional Website at $899 gives you 10 pages with CMS, mobile responsive, and unlimited revisions. Complete W3C certified HTML with full ownership!"
+      ]
+    },
+    {
+      "tag": "pricing_website_elite",
+      "patterns": [
+        "elite website price", "15 page website cost", "elite website package", "$1494 website",
+  "website with payment integration", "elite website features", "online booking website",
+  "website with appointment tool", "what's in elite website", "elite website what's included",
+  "how much is elite website", "tell me about $1494 website", "I need an elite website",
+  "elite website design", "website for advanced business", "15 page website what included",
+  "elite website mobile responsive", "elite website online reservation", "elite website payment integration",
+  "elite website custom forms", "elite website lead capturing", "elite website newsletter subscription",
+  "elite website newsfeed integration", "elite website social media integration", "elite website search engine submission",
+  "elite website 5 stock photos", "elite website 3 banner designs", "elite website jQuery slider",
+  "elite website W3C certified", "elite website 48-72 hour TAT", "elite website ownership rights",
+  "elite website money back guarantee", "elite website unique design guarantee", "is $1494 website worth it?",
+  "elite vs professional website", "what extra does elite website have?", "elite website add on expedited services",
+  "elite website conceptual and dynamic", "elite website striking hover effects", "elite website dedicated project manager",
+  "I want a website with online booking", "I need a website with payment gateway", "do you have a website for $1494?",
+  "elite website price $1494", "elite website original price $2988", "elite website discounted",
+  "elite website features list", "elite website includes appointment tool and payment", "elite website complete deployment"
+      ],
+      "responses": [
+        "Our Elite Website package is $1494 (was $2988). It includes up to 15 unique pages, mobile responsive, online reservation/appointment tool, payment integration, custom forms, lead capturing, newsletter subscription, and more. 48-72 hour turnaround!",
+        "The Elite Website at $1494 is a complete solution with appointment booking, payment gateway, and all advanced features. Perfect for service businesses!"
+      ]
+    },
+    {
+      "tag": "pricing_ecommerce_basic",
+      "patterns": [
+        "Ecommerce basic price", "Basic ecommerce package", "$449 ecommerce",
+        "Ecommerce with 10 products", "What's in basic ecommerce", "Ecommerce basic features",
+        "Shopping cart price", "Basic online store cost",
+        "ecommerce basic package price", "basic ecommerce store cost", "how much for basic ecommerce",
+    "tell me about $449 ecommerce package", "what's included in basic ecommerce", "basic online store features",
+    "I need a simple ecommerce website", "ecommerce with 10 products price", "cheapest ecommerce package",
+    "do you have a basic shopping cart solution", "what does basic ecommerce include", "basic ecommerce plan details",
+    "ecommerce basic package overview", "is there an entry level ecommerce package", "starting ecommerce store cost",
+    "I want to sell 10 products online", "basic ecommerce with payment gateway", "ecommerce for small inventory",
+    "how many products in basic ecommerce", "basic ecommerce revisions", "basic ecommerce turnaround time"
+      ],
+      "responses": [
+        "Our E-Commerce Basic Package is $449 (was $898). It includes up to 10 products, 3 categories, theme-based design, shopping cart, payment integration, wishlist, and CMS. Perfect for small online stores!",
+        "The Basic E-Commerce at $449 gives you 10 products, payment gateway, and complete inventory management. 6 revisions included!"
+      ]
+    },
+    {
+      "tag": "pricing_ecommerce_startup",
+      "patterns": [
+        "Ecommerce startup price", "Startup ecommerce package", "$699 ecommerce",
+        "Ecommerce with 25 products", "What's in startup ecommerce", "Ecommerce startup features",
+        "startup ecommerce package price", "ecommerce with 25 products cost", "$699 ecommerce details",
+    "what's in startup ecommerce package", "tell me about startup ecommerce", "ecommerce for growing business",
+    "I need an ecommerce store with 25 products", "startup ecommerce features", "how much is ecommerce startup",
+    "ecommerce with social media integration price", "startup online store package", "ecommerce 25 products 5 categories",
+    "do you have a mid-level ecommerce solution", "startup ecommerce plan includes what", "ecommerce with 12 revisions",
+    "I want to scale my online store", "better than basic ecommerce package", "ecommerce with more products",
+    "startup ecommerce vs basic", "what extra does startup ecommerce offer", "ecommerce with 5 banners"
+      ],
+      "responses": [
+        "Our E-Commerce Startup Package is $699 (was $1398). It includes up to 25 products, 5 categories, high-end theme design, 5 banners, 12 revisions, social media integration, and all basic features. Great for growing businesses!",
+        "The Startup E-Commerce at $699 gives you 25 products, unlimited revisions, and full social media integration. Mobile responsive included!"
+      ]
+    },
+    {
+      "tag": "pricing_ecommerce_professional",
+      "patterns": [
+        "Ecommerce professional price", "Professional ecommerce package", "$1199 ecommerce",
+        "Ecommerce with 100 products", "What's in professional ecommerce", "Ecommerce professional features",
+        "professional ecommerce package price", "ecommerce with 100 products cost", "$1199 ecommerce details",
+    "what's in professional ecommerce", "tell me about professional ecommerce", "ecommerce for established business",
+    "I need a full featured ecommerce store", "professional ecommerce features", "how much is ecommerce professional",
+    "ecommerce with unlimited revisions", "professional online store package", "ecommerce 100 products 10 categories",
+    "do you have a comprehensive ecommerce solution", "professional ecommerce plan includes", "ecommerce with all features",
+    "I want a complete online store", "ecommerce for large inventory", "professional ecommerce vs startup",
+    "what extra does professional ecommerce offer", "ecommerce with product management"
+      ],
+      "responses": [
+        "Our E-Commerce Professional Package is $1199 (was $2398). It includes up to 100 products, 10 categories, mobile responsive, unlimited revisions, and all features. Perfect for established businesses!",
+        "The Professional E-Commerce at $1199 gives you 100 products, unlimited revisions, and complete e-commerce functionality!"
+      ]
+    },
+    {
+      "tag": "pricing_ecommerce_elite",
+      "patterns": [
+        "Ecommerce elite price", "Elite ecommerce package", "$1699 ecommerce",
+        "Ecommerce with 500 products", "What's in elite ecommerce", "Ecommerce elite features",
+        "Ecommerce with product reviews", "Advanced ecommerce store",
+        "elite ecommerce package price", "ecommerce with 500 products cost", "$1699 ecommerce details",
+    "what's in elite ecommerce package", "tell me about elite ecommerce", "ecommerce for large business",
+    "I need an advanced ecommerce store", "elite ecommerce features", "how much is ecommerce elite",
+    "ecommerce with product reviews", "elite online store package", "ecommerce 500 products 25 categories",
+    "do you have a premium ecommerce solution", "elite ecommerce plan includes blog", "ecommerce with ratings",
+    "I want a high volume ecommerce site", "ecommerce with all advanced features", "elite vs professional ecommerce",
+    "what extra does elite ecommerce offer", "ecommerce with product comparison"
+      ],
+      "responses": [
+        "Our E-Commerce Elite Package is $1699 (was $3398). It includes up to 500 products, 25 categories, product reviews & ratings, unlimited revisions, and all advanced features. Blog page included!",
+        "The Elite E-Commerce at $1699 gives you 500 products, product ratings, and complete customization. Perfect for large online stores!"
+      ]
+    },
+    {
+      "tag": "pricing_branding_basic",
+      "patterns": [
+        "Branding basic price", "Basic branding package", "$39 branding",
+        "Basic branding features", "What's in basic branding",
+        "basic branding package price", "$39 branding details", "what's in basic branding",
+    "tell me about $39 branding", "basic branding features", "I need basic branding",
+    "how much for basic branding package", "branding with 3 logo concepts", "basic branding what's included",
+    "cheapest branding package", "entry level branding", "branding for startups on budget",
+    "do you have a simple branding solution", "basic branding with 3 revisions", "branding 1 designer",
+    "I want basic brand identity", "branding with PNG JPG formats", "basic branding color options",
+    "is $39 branding good for small business", "basic branding turnaround time", "basic branding money back"
+      ],
+      "responses": [
+        "Our Branding Basic Package is $39 (was $78). It includes 3 logo concepts, 3 revisions, 1 dedicated designer, color options, grayscale format, and all file formats (PNG, JPG). 24-48 hour turnaround!",
+        "The Basic Branding at $39 gives you 3 logo concepts with full ownership. Great for startups on a budget!"
+      ]
+    },
+    {
+      "tag": "pricing_branding_startup",
+      "patterns": [
+        "Branding startup price", "Startup branding package", "$79 branding",
+        "Branding with 5 logos", "Startup branding features",
+        "startup branding package price", "$79 branding details", "what's in startup branding",
+    "tell me about $79 branding", "startup branding features", "I need startup branding",
+    "how much for startup branding package", "branding with 5 logo concepts", "startup branding what's included",
+    "branding with unlimited revisions", "branding with 2 designers", "branding for growing companies",
+    "do you have a better branding solution", "startup branding with AI PSD EPS", "branding all file formats",
+    "I want complete brand identity", "branding with free icon", "startup branding vs basic",
+    "what extra does startup branding offer", "branding with vector files", "startup branding satisfaction guarantee"
+      ],
+      "responses": [
+        "Our Branding Startup Package is $79 (was $158). It includes 5 logo concepts, unlimited revisions, 2 designers, free icon, and all file formats (AI, PSD, EPS, PNG, JPG, PDF).",
+        "The Startup Branding at $79 gives you 5 unique logo concepts with unlimited revisions!"
+      ]
+    },
+    {
+      "tag": "pricing_branding_professional",
+      "patterns": [
+        "Branding professional price", "Professional branding package", "$99 branding",
+        "Branding with stationery", "Professional branding features",
+        "professional branding package price", "$99 branding details", "what's in professional branding",
+    "tell me about $99 branding", "professional branding features", "I need professional branding",
+    "how much for professional branding package", "branding with 8 logo concepts", "professional branding what's included",
+    "branding with stationery design", "branding with 3 designers", "branding for established companies",
+    "do you have a comprehensive branding solution", "professional branding with business card letterhead",
+    "branding with $50 off website", "I want full brand identity with stationery",
+    "professional branding vs startup", "what extra does professional branding offer",
+    "branding with all file formats", "professional branding unlimited revisions", "branding with vector formats"
+      ],
+      "responses": [
+        "Our Branding Professional Package is $99 (was $198). It includes 8 logo concepts, unlimited revisions, 3 designers, free stationery design, and $50 off on website order. All file formats included!",
+        "The Professional Branding at $99 gives you 8 logos, unlimited revisions, and full stationery set!"
+      ]
+    },
+    {
+      "tag": "pricing_video_basic",
+      "patterns": [
+        "Basic video package", "30 second video cost", "Video animation price",
+        "Basic video features", "What's in basic video", "$499 video package","basic video package price", "30 second video cost", "$499 video details",
+    "what's in basic video package", "tell me about $499 video", "basic video features",
+    "I need a promotional video", "how much for explainer video", "basic video what's included",
+    "30 second animation price", "video with script and storyboard", "basic video with voice over",
+    "do you have a simple video package", "video with 4 week delivery", "basic video unlimited revisions",
+    "I want a product demo video", "basic video for startup", "video animation for business",
+    "is $499 video worth it", "basic video vs other packages", "video with professional script"
+      ],
+      "responses": [
+        "Our Basic Video Package is $499 (was $998). It includes a 30-second 2D explainer video, professional script, storyboard, animation, voice-over & sound effects, and 4-week delivery. Unlimited revisions!",
+        "The Basic Video at $499 gives you a professional 30-second animated video with full ownership. Perfect for product demos!"
+      ]
+    },
+    {
+      "tag": "pricing_video_classic",
+      "patterns": [
+        "Classic video package", "60 second video cost", "Classic video features",
+        "$999 video package", "What's in classic video",
+        "classic video package price", "60 second video cost", "$999 video details",
+    "what's in classic video", "tell me about $999 video", "classic video features",
+    "I need a longer promotional video", "how much for 60 second video", "classic video what's included",
+    "60 second animation price", "video with sample theme", "classic video with 5 week delivery",
+    "do you have a premium video package", "video with better production quality", "classic video unlimited revisions",
+    "I want a detailed explainer video", "classic video for established business", "video with professional voice over",
+    "is $999 video worth it", "classic vs basic video", "what extra does classic video offer"
+      ],
+      "responses": [
+        "Our Classic Video Package is $999 (was $1998). It includes a 60-second video, professional script, sample theme, storyboard, animation, voice-over, and 5-week delivery. Unlimited revisions!",
+        "The Classic Video at $999 gives you a 60-second explainer with premium production quality!"
+      ]
+    },
+    {
+      "tag": "pricing_seo_basic",
+      "patterns": [
+        "Basic SEO package", "SEO services price", "SEO for 3 months",
+        "$3500 SEO", "What's in basic SEO", "SEO basic features",
+        "basic SEO package price", "SEO for 3 months cost", "$3500 SEO details",
+    "what's in basic SEO", "tell me about $3500 SEO", "basic SEO features",
+    "I need SEO for my website", "how much for SEO services", "basic SEO what's included",
+    "SEO with 15 keywords", "basic SEO with monthly reporting", "SEO with on-page optimization",
+    "do you have an SEO package", "SEO with Google Analytics setup", "basic SEO off-page activities",
+    "I want to rank higher on Google", "SEO for small business", "SEO with keyword targeting",
+    "is $3500 SEO worth it", "basic SEO vs other packages", "SEO with link building"
+      ],
+      "responses": [
+        "Our Basic SEO Plan is $3500 for 3 months. It includes business analysis, 15 keywords targeting, on-page optimization, Google Analytics setup, monthly reporting, and off-page activities like social bookmarking and directory submission.",
+        "The Basic SEO package at $3500 gives you comprehensive SEO for 3 months with full reporting!"
+      ]
+    },
+    {
+      "tag": "pricing_smm_startup",
+      "patterns": [
+        "SMM startup package", "Social media marketing price", "Facebook and Instagram marketing",
+        "$399 SMM", "What's in SMM startup",
+        "SMM startup package price", "social media marketing cost", "$399 SMM details",
+    "what's in SMM startup", "tell me about $399 SMM", "SMM startup features",
+    "I need social media management", "how much for Facebook and Instagram", "SMM startup what's included",
+    "social media with 3-5 posts per week", "SMM with content creation", "SMM with page optimization",
+    "do you have a social media package", "SMM with monthly progress reports", "SMM for 2 accounts",
+    "I want to grow my social media", "SMM for small business", "SMM with Facebook Instagram",
+    "is $399 SMM worth it", "SMM startup details", "social media marketing for beginners"
+      ],
+      "responses": [
+        "Our SMM Startup Package is $399.99 for 2 social media accounts (Facebook & Instagram), 3-5 posts per week, content creation, business page optimization, and monthly progress reports.",
+        "The SMM Startup at $399.99 gives you professional social media management for 2 platforms!"
+      ]
+    },
+    {
+      "tag": "pricing_content_basic",
+      "patterns": [
+        "Content writing price", "Web content basic package", "1 page copywriting cost",
+        "$129 content", "What's in basic content",
+         "basic content writing price", "web content package cost", "$129 content details",
+    "what's in basic content", "tell me about $129 content", "basic content features",
+    "I need content for my website", "how much for copywriting", "basic content what's included",
+    "1 page content writing price", "content with 300 words", "basic content with 5 revisions",
+    "do you have a content writing package", "content with 3-4 day turnaround", "basic content original writing",
+    "I want SEO friendly content", "content for website page", "content with professional copywriter",
+    "is $129 content worth it", "basic content vs other packages", "content writing for business"
+      ],
+      "responses": [
+        "Our Web Content Basic Package is $129 for 1 page, 300 words, written by a professional copywriter, with 5 revisions and 3-4 day turnaround. 100% original content!",
+        "The Basic Content package at $129 gives you high-quality, SEO-friendly copy for your website!"
+      ]
+    },
+    {
+      "tag": "refund_policy",
+      "patterns": [
+        "what is your refund policy", "can I get my money back", "money back guarantee", "tell me about refunds",
+  "do you offer refunds", "how does your refund policy work", "refund terms", "can I cancel and get refund",
+  "money back guarantee details", "what if I'm not satisfied", "satisfaction guarantee", "refund conditions",
+  "is there money back guarantee", "refund time period", "when can I get refund", "how to claim refund",
+  "refund process", "refund eligibility", "are there any refund restrictions", "refund policy for logo",
+  "refund policy for website", "refund policy for e-commerce", "refund policy for branding",
+  "refund policy for video", "refund policy for SEO", "refund policy for SMM", "refund policy for content",
+  "I want a refund, what do I do", "I'm not happy with the design, can I get refund",
+  "if I don't like the initial concepts, can I refund", "refund after approving concepts",
+  "refund after requesting revisions", "refund within 7 days", "refund after 7 days",
+  "refund for special packages", "refund for bundle services", "refund for website design",
+  "how long does refund take", "refund processing time", "refund to credit card", "refund to PayPal",
+  "do I get full refund", "partial refund policy", "refund exceptions", "when is refund not applicable",
+  "money back guarantee terms and conditions", "read refund policy", "your refund policy from terms of use",
+  "I want to cancel my order, can I get refund", "cancellation policy", "refund and cancellation"
+      ],
+      "responses": [
+        "We offer a 100% Money Back Guarantee on most design packages. However, the guarantee becomes void if you've approved initial concepts, requested revisions, or after 7 days from purchase. Refunds take up to 21 business days to process.",
+        "Our money-back guarantee applies before concept approval. Once you approve and request revisions, we guarantee your satisfaction through unlimited revisions instead of refunds.",
+        "You can claim a refund within 7 days if you're not satisfied with initial concepts. After that, our satisfaction guarantee ensures we revise until you're happy!"
+      ]
+    },
+    {
+      "tag": "privacy_policy",
+      "patterns": [
+        "what is your privacy policy", "how do you use my data", "is my information safe", "privacy policy details",
+  "data protection", "do you share my information", "how do you protect my privacy", "your privacy practices",
+  "information collection", "cookies policy", "what data you collect", "do you use cookies",
+  "how do you use cookies", "can I opt out of cookies", "GDPR compliance", "CCPA rights",
+  "my personal information", "do you sell my data", "do not sell my information", "access my data",
+  "delete my data", "rectify my data", "data subject rights", "privacy rights",
+  "how long do you keep my data", "where is my data stored", "is data transferred internationally",
+  "third party sharing", "do you share with advertisers", "what information do you collect automatically",
+  "log files information", "IP address collection", "browser type collection", "device information",
+  "email marketing opt out", "unsubscribe from emails", "how to contact about privacy",
+  "privacy policy from website", "your privacy policy explained", "I have privacy concerns",
+  "is my payment information secure", "encryption used", "data security measures",
+  "children's privacy", "COPPA compliance", "do you collect children's data",
+  "privacy policy for California residents", "privacy policy for EU users", "data protection officer contact",
+  "I want to exercise my privacy rights", "request data deletion", "opt out of data sale"
+      ],
+      "responses": [
+        "We collect information like name, email, and browsing behavior to improve our services and communicate with you. We use cookies and do not share your personal information with third parties except for legal reasons. Full policy on our website.",
+        "Your privacy matters! We use encryption to protect your data, never share SMS opt-in or phone numbers, and you can request data deletion anytime under CCPA/GDPR rights."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact you?", "I want to speak to someone", "Contact support",
+        "Customer service", "Get in touch", "Contact details", "Email address",
+        "Phone number", "Live chat", "Want to talk to a person", "Reach customer support",
+        "How to contact BMYBrand", "Support team", "Help desk","contact BMYBrand", "BMYBrand contact number", "BMYBrand email",
+    "how to reach BMYBrand", "BMYBrand phone number", "BMYBrand live chat",
+    "BMYBrand customer service", "BMYBrand support email", "BMYBrand contact form",
+    "BMYBrand WhatsApp", "BMYBrand social media", "BMYBrand Facebook",
+    "BMYBrand Instagram", "BMYBrand Twitter", "BMYBrand LinkedIn",
+    "BMYBrand address", "BMYBrand location", "BMYBrand office",
+    "BMYBrand headquarters", "BMYBrand team contact", "BMYBrand sales"
+      ],
+      "responses": [
+        "You can reach us at +1-469-501-1401, use our live chat, or email us through the contact form on our website. A dedicated project manager will respond quickly!",
+        "Contact us 24/7 at +1 469 501 1401 or via live chat. Our team is always ready to help!"
+      ]
+    },
+    {
+      "tag": "design_process",
+      "patterns": [
+        "How does your design process work?", "What is your process for creating a website?",
+        "How do revisions work?", "Tell me about your workflow", "Design process explanation",
+        "How do you work", "What is the creative process", "Step by step process",
+        "How many revisions", "Revision policy", "How does collaboration work",
+        "explain design process", "how design works at BMYBrand", "BMYBrand creative process",
+    "steps in design process", "design workflow", "how you create designs",
+    "process for logo design", "process for website design", "how revisions work at BMYBrand",
+    "design timeline", "how you handle feedback", "design approval process",
+    "how many revisions can I get", "revision process explained", "collaboration process",
+    "how you understand my requirements", "design brief process", "initial concept delivery",
+    "final design delivery process", "how you ensure satisfaction", "design quality process"
+      ],
+      "responses": [
+        "Our process: 1) You share your ideas via creative brief, 2) We provide initial concepts within 48 hours, 3) You request revisions, 4) We refine until you're 100% satisfied. Unlimited revisions on most packages!",
+        "We believe in collaboration! You provide feedback, we implement changes. Usually 2-6 revision cycles to perfect your design. You're involved every step of the way!"
+      ]
+    },
+    {
+      "tag": "ownership_rights",
+      "patterns": [
+        "Who owns the final design?", "Will I own the website?", "Do I get the source files?",
+        "Ownership rights", "Who owns the copyright", "Do I get full rights",
+        "Source files included", "Do I own the logo after payment", "Copyright transfer",
+        "do I own the design", "who holds copyright", "intellectual property rights",
+    "rights after payment", "design ownership transfer", "copyright ownership",
+    "do you keep any rights", "full rights to design", "commercial use rights",
+    "can I trademark the logo", "ownership of final files", "who owns source files",
+    "rights to modified designs", "ownership after project completion", "legal ownership",
+    "do I get exclusive rights", "are designs copyrighted", "ownership guarantee",
+    "transfer of ownership document", "proof of ownership", "ownership certificate"
+
+      ],
+      "responses": [
+        "Upon full payment, you get 100% ownership rights to the final product, including complete source files (AI, PSD, etc.). We don't retain any rights to your final design!",
+        "You own everything! All source files are provided, and you have full commercial rights to use your logo/website anywhere."
+      ]
+    },
+    {
+      "tag": "turnaround_time",
+      "patterns": [
+        "How long does it take?", "Delivery time", "Turnaround time",
+        "When will I get my design", "How fast can you deliver", "Project timeline",
+        "How many days for logo", "Website completion time", "Delivery schedule",
+        "how fast can you deliver", "typical project duration", "time to complete project",
+    "how long for logo design", "how long for website", "how long for video",
+    "project completion time", "delivery schedule", "timeframe for project",
+    "when will I get concepts", "initial concepts delivery time", "revision turnaround",
+    "estimated completion date", "project timeline estimate", "how many days for revision",
+    "rush delivery option", "expedited service time", "quick turnaround available",
+    "standard delivery time", "time from start to finish", "project duration estimate"
+      ],
+      "responses": [
+        "Most projects have 24-48 hour turnaround for initial concepts. Website development takes 2-6 weeks depending on complexity. Videos take 4-6 weeks. We'll provide exact timeline based on your package!",
+        "Initial concepts in 48 hours, then revisions until you're satisfied. Total time varies by project but we keep you updated throughout!"
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "What payment methods do you accept?", "How can I pay?", "Payment options",
+        "Do you accept credit cards", "Can I pay via PayPal", "Payment types",
+        "Is payment secure", "Visa Mastercard accepted",
+        "accepted payment methods", "how to pay", "payment options available",
+    "can I pay by credit card", "do you accept debit card", "PayPal payment",
+    "bank transfer details", "wire transfer info", "payment through PayPal",
+    "is payment secure", "payment encryption", "safe payment",
+    "installment payment", "payment plan available", "pay in installments",
+    "partial payment option", "deposit required", "payment before work",
+    "payment after completion", "refund payment method", "payment processing time"
+      ],
+      "responses": [
+        "We accept Visa, MasterCard, Amex via secure merchant services, plus PayPal and bank transfers. Your payment information is encrypted and secure!",
+        "You can pay by credit card (Visa, Master, Amex), PayPal, or bank transfer. All payments are processed securely!"
+      ]
+    },
+    {
+      "tag": "satisfaction_guarantee",
+      "patterns": [
+        "Satisfaction guarantee", "What if I don't like the design",
+        "Guarantee policy", "Are you sure I'll be satisfied", "Quality guarantee","satisfaction guaranteed", "what if I don't like it", "not happy with design",
+    "guarantee details", "quality guarantee", "design guarantee",
+    "unlimited revisions guarantee", "happy or revise", "satisfaction policy",
+    "guarantee terms", "what if I'm not satisfied", "guarantee conditions",
+    "revision guarantee", "until I'm happy", "satisfaction promise",
+    "guaranteed satisfaction", "design quality guarantee", "you will revise until I'm happy",
+    "no satisfaction no payment", "satisfaction assurance", "guarantee for designs",
+    "satisfaction guarantee explained", "how satisfaction guarantee works", "guarantee benefits"
+      ],
+      "responses": [
+        "We offer 100% satisfaction guarantee! If you're not happy, we revise until you are. Most packages include unlimited revisions specifically for this reason!",
+        "Your satisfaction is our priority! We work with you until the design matches your vision perfectly."
+      ]
+    },
+    {
+      "tag": "website_features",
+      "patterns": [
+        "What features do websites include?", "Do websites have CMS", "Is mobile responsive included",
+        "What technology do you use", "Website features list", "Do I get admin panel",
+        "Is hosting included", "What comes with website",
+           "what comes with website", "website inclusions", "website package features",
+    "features in website package", "what technology you use", "website functionality",
+    "responsive design included", "mobile friendly website", "CMS features",
+    "admin panel features", "payment gateway included", "contact form features",
+    "SEO features in website", "social media integration features", "website security features",
+    "hosting included", "domain included", "website maintenance features",
+    "custom features available", "additional features cost", "feature comparison"
+      ],
+      "responses": [
+        "Our websites include custom design, W3C certified HTML, source files, and depending on package: CMS, mobile responsive, payment integration, contact forms, and more. Hosting is not included but we can help set it up!",
+        "Features vary by package: from basic HTML sites to full CMS with e-commerce. All designs are custom, not templates!"
+      ]
+    },
+    {
+      "tag": "logo_features",
+      "patterns": [
+        "What's included in logo packages?", "Do I get different formats",
+        "Logo file formats", "What files will I receive", "Vector files included",
+        "Do I get AI files", "Logo package inclusions",
+        "what comes with logo", "logo package inclusions", "logo design features",
+    "files you get with logo", "logo file types", "logo formats provided",
+    "vector files included", "source files for logo", "AI file included",
+    "EPS file included", "PNG file included", "JPG file included",
+    "PDF file included", "TIFF file included", "SVG file included",
+    "color variations included", "black and white version", "transparent background",
+    "logo with icon", "logo with tagline", "logo usage rights",
+    "logo revisions included", "logo concepts included"
+      ],
+      "responses": [
+        "Higher-tier packages include all formats: AI, PSD, EPS, PNG, JPG, PDF, TIFF, SVG. Basic packages include JPEG/PNG. All packages include full ownership rights!",
+        "You'll get source files in appropriate formats based on your package. Vector formats (AI, EPS) included from Professional package upward."
+      ]
+    },
+    {
+      "tag": "discounts",
+      "patterns": [
+        "Any discounts available?", "Special offers", "Promo code",
+        "Is there a sale", "Discounted prices", "Cheaper options",
+        "Can I get a discount", "Coupon code",
+        "any discounts available", "special offers today", "current promotions",
+    "discount codes", "coupon codes", "promo codes",
+    "sale going on", "discounted packages", "cheaper options",
+    "best price", "lowest price", "price match",
+    "bundle discount", "multiple services discount", "seasonal offers",
+    "festival discount", "new year offer", "holiday sale",
+    "referral discount", "first time customer discount", "loyalty discount"
+      ],
+      "responses": [
+        "We regularly have special offers! Check our website for current promotions. Some packages also include $50 off on website orders when you buy branding packages!",
+        "We offer competitive pricing with regular discounts. The prices shown are already heavily discounted from original rates!"
+      ]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "Do you provide support after delivery?", "Post delivery support",
+        "Technical support", "Help after website is done", "Maintenance services",
+        "Do you offer maintenance","do you offer support", "after delivery support", "post project support",
+    "technical help available", "maintenance services", "website maintenance",
+    "support for issues", "help with technical problems", "bug fixing support",
+    "update support", "security updates", "backup services",
+    "support duration", "how long is support", "support package",
+    "ongoing maintenance cost", "support contract", "support SLA",
+    "response time for support", "support team availability", "emergency support",
+    "support for changes", "modification support", "support after launch"
+      ],
+      "responses": [
+        "Yes! We provide support and can discuss maintenance packages. Your dedicated project manager remains available for questions even after project completion.",
+        "We offer ongoing support and maintenance services. Contact us to discuss your specific needs!"
+      ]
+    },
+    {
+      "tag": "business_hours",
+      "patterns": [
+        "What are your business hours?", "Are you open now", "When can I contact you",
+        "Working hours", "24/7 support", "Are you available on weekends","when are you open", "operating hours", "business timing",
+    "office hours", "support hours", "customer service hours",
+    "are you open on weekends", "weekend support", "holiday hours",
+    "24 hour support", "24/7 availability", "after hours support",
+    "evening support available", "night support", "early morning support",
+    "time zone", "your working days", "days you work",
+    "closed on holidays", "support timing", "live chat hours",
+    "phone support hours", "email response time", "best time to contact"
+
+      ],
+      "responses": [
+        "We're available 24/7 via live chat and phone at +1-469-501-1401! Our team works round the clock to serve clients across time zones.",
+        "You can reach us anytime! Our support is 24/7, and project managers respond quickly to inquiries."
+      ]
+    }
+  ]
+}

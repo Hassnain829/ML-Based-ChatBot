@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 600px;
+    max-width: 100%;
+    height: 80vh;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #10a37f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.chat-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f9f9f9;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.message.user {
+    justify-content: flex-end;
+}
+
+.message .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #10a37f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.message.user .avatar {
+    background: #075e54;
+    margin-right: 0;
+    margin-left: 10px;
+    order: 2;
+}
+
+.message .content {
+    max-width: 70%;
+    padding: 10px 15px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    word-wrap: break-word;
+}
+
+.message.user .content {
+    background: #dcf8c6;
+    order: 1;
+}
+
+.message.bot .content {
+    background: #e4e6eb;
+}
+
+/* Typing indicator */
+.typing .content span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #888;
+    margin-right: 5px;
+    animation: typing 1.5s infinite;
+}
+
+.typing .content span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.typing .content span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes typing {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-8px); }
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    padding: 12px 20px;
+    background: #10a37f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chat-input button:hover {
+    background: #0e8c6d;
+}
